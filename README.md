@@ -1,3 +1,3 @@
-React restaurant app
+React school project: restaurant app
 
 Live:  https://lunatiqqc.github.io/raptorhouse/
