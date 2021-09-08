@@ -1,38 +1,240 @@
-.App {
-  text-align: center;
+#home > section:nth-child(1) > section:nth-child(1) {
+    display: -webkit-box;
+    overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#slider {
+    position: relative;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#sliderimg {
+    display: inherit;
+    position: relative;
+    left: 0%;
+    transition: left 0.5s ease;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#arrow_left,
+#arrow_right {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    z-index: 2;
+    justify-content:center;
+    align-items:center;
 }
 
-.App-link {
-  color: #61dafb;
+#arrow_right {
+    left: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.toggleDisplay {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+}
+html {
+    font-family: "Ranchers", cursive;
+    box-sizing: border-box;
+}
+
+#root > div > header > nav > ul {
+    display: flex;
+}
+
+figcaption {
+    text-align: center;
+}
+
+html * {
+    box-sizing: border-box;
+}
+
+table {
+    text-align: left;
+}
+
+h1 {
+    margin: 0.3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited{
+    color: white;
+}
+
+p {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+figure {
+    margin: 0;
+    width: 100%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+.almost_white > * {
+    color: #f2f2f2;
+}
+
+.small_margin > * {
+    margin: 1% 2%;
+}
+.small_margin_self {
+    margin: 2rem;
+}
+
+.d_flex > * {
+    display: flex;
+}
+
+.img_sizes img {
+    width: 12px;
+}
+
+.img_white img {
+    filter: brightness(10);
+}
+
+.white_border {
+    border: 0.5rem solid #f2f2f2;
+}
+.white_border_children > * {
+    border: 0.5rem solid #f2f2f2;
+}
+
+.small_padding {
+    padding: 2rem;
+}
+.small_padding_children > * {
+    padding: 0 0.5rem;
+}
+
+.small_padding_children2 > * {
+    padding: 0.5rem 0rem;
+}
+
+.small_padding_children3 > * {
+    padding: 0.8rem 0.8rem;
+}
+
+.child_width_23 > * {
+    width: 22%;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexBasis-50_children > * {
+    flex-basis: 45%;
+}
+
+@media screen and (max-width: 1024px) {
+    #root > div > header > nav > ul {
+        justify-content: space-evenly;
+        padding: 0 !important;
+    }
+
+    #root > div > div > main {
+        width: 100% !important;
+    }
+
+    .small_padding {
+        padding: 0.1rem;
+    }
+
+    html {
+        font-size: 3vw;
+    }
+    #root > div > div > main > #home > section:nth-child(1),
+    #root > div > div > main > div > section:nth-child(1) * {
+        flex-direction: column;
+        text-align: -webkit-center;
+    }
+
+    main > div {
+        padding: 5%;
+    }
+
+    #root
+        > div
+        > div
+        > main
+        > #home
+        > section:nth-child(1)
+        > section:nth-child(2)
+        > article
+        * {
+        padding: 10px;
+    }
+
+    .white_border,
+    .white_border_children * {
+        border-width: 2px;
+    }
+
+    /* menu */
+
+    .flexBasis-50_children > * {
+        flex-basis: 100%;
+    }
+
+    /* profil */
+
+    #root > div > div > main > div > div > figure {
+        width: fit-content !important;
+    }
+
+    /* kontakt */
+
+    #root > div > div > main > div > div > section.small_padding * {
+        padding: 0.5rem;
+    }
+    #root > div > div > main > div > div > section.small_padding {
+        margin-top: 5%;
+    }
+
+    .small_padding_children3 > * {
+        padding: 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    #burger {
+        display: block !important;
+        font-size: 3rem;
+        text-align: right;
+    }
+    #root > div > header > nav > ul {
+        display: none;
+    }
+
+    html {
+        font-size: 6vw;
+    }
+
+    .child_width_23 > * {
+        width: 100%;
+    }
 }
