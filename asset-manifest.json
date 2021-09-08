@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/raptorhouse/static/css/main.9f110c93.chunk.css",
-    "main.js": "/raptorhouse/static/js/main.729314bc.chunk.js",
-    "main.js.map": "/raptorhouse/static/js/main.729314bc.chunk.js.map",
+    "main.js": "/raptorhouse/static/js/main.6d9e7da8.chunk.js",
+    "main.js.map": "/raptorhouse/static/js/main.6d9e7da8.chunk.js.map",
     "runtime-main.js": "/raptorhouse/static/js/runtime-main.f2e69e2c.js",
     "runtime-main.js.map": "/raptorhouse/static/js/runtime-main.f2e69e2c.js.map",
     "static/js/2.80edf9b1.chunk.js": "/raptorhouse/static/js/2.80edf9b1.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.f2e69e2c.js",
     "static/js/2.80edf9b1.chunk.js",
     "static/css/main.9f110c93.chunk.css",
-    "static/js/main.729314bc.chunk.js"
+    "static/js/main.6d9e7da8.chunk.js"
   ]
 }
